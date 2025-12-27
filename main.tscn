@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://ooij8sq2730b"]
+[gd_scene load_steps=2 format=3 uid="uid://ooij8sq2730b"]
+
+[ext_resource type="Script" uid="uid://b3grofubtq3th" path="res://ollama.gd" id="1_ig7tw"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -7,3 +9,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Ollama" type="Node" parent="."]
+script = ExtResource("1_ig7tw")
