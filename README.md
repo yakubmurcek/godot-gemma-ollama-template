@@ -4,6 +4,7 @@ A minimal template for running **Google's Gemma models** in Godot 4.5+ via [Olla
 
 ## Features
 
+- **Interactive Demo GUI** - Model selector, conversation display, status bar
 - **Simple Chat** - Basic text generation with Gemma3
 - **Function Calling** - Tool/function calling with Functiongemma
 - **Self-contained scripts** - Copy-paste ready, no dependencies
@@ -24,8 +25,19 @@ A minimal template for running **Google's Gemma models** in Godot 4.5+ via [Olla
 2. Start Ollama: `ollama serve` (refer to Ollama docs for more info)
 3. Open project in Godot
 4. Run the scene (F5)
+5. Select a model from the dropdown and send a message!
 
 ## Scripts
+
+The demo GUI (`main.tscn`) showcases both models interactively. The standalone scripts below also work independently — just attach one to any Node and run:
+
+### Demo GUI (`scripts/demo_gui.gd`)
+
+Interactive demo with:
+- Model selector (switch between gemma3 and functiongemma)
+- Conversation display with colored messages
+- Tool call visualization
+- Error display and timing info
 
 ### Simple Chat (`scripts/simple_chat.gd`)
 
@@ -46,7 +58,7 @@ send_message("What's the weather in Paris?")
 
 ## Adding Your Own Tools
 
-1. Define the tool in `_get_tool_definitions()`:
+1. Define the tool in `_tools` array:
 ```gdscript
 {
     "type": "function",
@@ -72,4 +84,4 @@ send_message("What's the weather in Paris?")
 
 ## License
 
-MIT License - see [LICENSE](LICENSE)
+MIT License - see [LICENSE](LICENSE) (tldr I don't care)
