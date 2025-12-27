@@ -21,7 +21,7 @@ A minimal template for running **Google's Gemma models** in Godot 4.5+ via [Olla
 ## Quick Start
 
 1. Clone this repository
-2. Start Ollama: `ollama serve`
+2. Start Ollama: `ollama serve` (refer to Ollama docs for more info)
 3. Open project in Godot
 4. Run the scene (F5)
 
